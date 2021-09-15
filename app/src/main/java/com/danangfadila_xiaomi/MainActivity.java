@@ -68,7 +68,8 @@ public class MainActivity extends AppCompatActivity {
         TestConnection = (TextView) findViewById(R.id.TestConn);
         lv = (ListView) findViewById(R.id.list);
         mImageView = (ImageView) findViewById(R.id.imageView);
-        
+
+        Glide.with(MainActivity.this).load(R.drawable.image1).centerCrop().into(mImageView);
 
         disableSSL();
         TestConn();
